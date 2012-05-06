@@ -72,4 +72,5 @@
     <!-- Cling -->
     <dimen name="cling_margin_h">5dip</dimen>
     <dimen name="cling_margin_v">20dip</dimen>
+
 </resources>
