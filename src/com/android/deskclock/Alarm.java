@@ -192,18 +192,7 @@ public final class Alarm implements Parcelable {
                         RingtoneManager.TYPE_ALARM);
             }
         }
-        incvol = c.getInt(Columns.ALARM_INCVOL_INDEX) == 1;
-        String profileString = c.getString(Columns.ALARM_PROFILE_INDEX);
-        if (profileString == null) {
-            profile = NO_PROFILE;
-        } else {
-            try {
-                profile = UUID.fromString(profileString);
-            } catch (Exception e) {
-                profile = NO_PROFILE;
-            }
-        }
-    }
+     }
 
     public Alarm(Parcel p) {
         id = p.readInt();

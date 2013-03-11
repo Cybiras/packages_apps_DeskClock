@@ -117,7 +117,7 @@ public class TimerClockService extends Service {
         public MediaPlayer mMediaPlayer;
 
         public Handler mHandler;
-        public Notification.BigTextStyle mNotificationBuilder;
+        public Notification.Builder mNotificationBuilder;
         public UpdateNotificationTask mNotificationTask;
     }
 
@@ -147,7 +147,7 @@ public class TimerClockService extends Service {
                                 remaining);
 
             // Set the remaining time
-            this.mTimer.mNotificationBuilder.setSummaryText(summary);
+            this.mTimer.mNotificationBuilder.setContentInfo(summary);
             updateCountDownNotification(this.mTimer, false);
             this.mTimer.mHandler.postDelayed(this, 1000L);
         }
@@ -743,13 +743,10 @@ public class TimerClockService extends Service {
         builder.setSmallIcon(R.drawable.stat_notify_timer);
         builder.setWhen(System.currentTimeMillis());
         builder.setContentIntent(intent);
-
-        // Use the BigTextStyle to build the notification
-        Notification.BigTextStyle bigBuilder = new Notification.BigTextStyle(builder);
-        bigBuilder.setBigContentTitle(title);
-        bigBuilder.bigText(msg);
-        bigBuilder.setSummaryText(summary);
-        timer.mNotificationBuilder = bigBuilder;
+        builder.setContentTitle(title);
+        builder.setContentText(msg);
+        builder.setContentInfo(summary);
+        timer.mNotificationBuilder = builder;
 
         // Send notification
         updateCountDownNotification(timer, true);
@@ -762,7 +759,7 @@ public class TimerClockService extends Service {
      */
     private void updateCountDownNotification(Timer timer, boolean newTimer) {
         // Build notification
-        Notification notification = timer.mNotificationBuilder.build();
+        Notification notification = timer.mNotificationBuilder.getNotification();
         notification.flags = Notification.FLAG_ONGOING_EVENT;
         if (timer.mNotificationId == 0) {
             timer.mNotificationId = ++sNotificationsIds;
