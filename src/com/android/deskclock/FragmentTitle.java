@@ -33,6 +33,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 /**
  * A {@link ViewGroup} for displaying a Holo theme title for
  * fragments that need to display a titlebar
@@ -128,6 +129,11 @@ public class FragmentTitle extends RelativeLayout {
         });
         activity.registerForContextMenu(overflow);
 
+       // Show overflow button?
+        if (showOptionsMenu()) {
+            overflow.setVisibility(View.VISIBLE);
+        }
+
         // Is necessary to determine the system status bar position?
         final View sb = findViewById(R.id.fragment_statusbar);
         sb.setLayoutParams(
@@ -147,5 +153,15 @@ public class FragmentTitle extends RelativeLayout {
                getSystemService(Context.WINDOW_SERVICE)).
                    getDefaultDisplay().getMetrics(displayMetrics);
         return (int)(FloatMath.ceil(DEFAULT_DPI_STATUS_BAR_HEIGHT * displayMetrics.density));
+    }
+
+     /**
+     * Method that returns if an option menu has to be displayed
+     *
+     * @return boolean If an option menu has to be displayed
+     */
+    private boolean showOptionsMenu() {
+        // Show overflow button?
+        return (!ViewConfiguration.get(getContext()).hasPermanentMenuKey());
     }
 }

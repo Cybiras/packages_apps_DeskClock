@@ -61,7 +61,7 @@
     <string name="analog_gadget" msgid="1670505720837152766">"Analoginen kello"</string>
     <string name="settings" msgid="5849739030579520686">"Asetukset"</string>
     <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">"Herätys äänettömässä tilassa"</string>
-    <string name="alarm_in_silent_mode_summary" msgid="6042500263899922832">"Soita herätys myös puhelimen ollessa äänettömässä tilassa"</string>
+    <string name="alarm_in_silent_mode_summary" msgid="123772279768441207">"Soita herätys myös puhelimen ollessa äänettömässä tilassa"</string>
     <string name="snooze_duration_title" msgid="1471249885139952670">"Torkun kesto"</string>
   <string-array name="snooze_duration_entries">
     <item msgid="8337408933053603125">"5 minuuttia"</item>
@@ -70,14 +70,6 @@
     <item msgid="7248236967714374250">"20 minuuttia"</item>
     <item msgid="738394723625179423">"25 minuuttia"</item>
     <item msgid="1180222611308391616">"30 minuuttia"</item>
-  </string-array>
-  <string-array name="snooze_duration_values">
-    <item msgid="3655014754453084122">"5"</item>
-    <item msgid="8939029597449573449">"10"</item>
-    <item msgid="3922647341176353315">"15"</item>
-    <item msgid="5821804105985044459">"20"</item>
-    <item msgid="6048861883552402852">"25"</item>
-    <item msgid="2740866721232379791">"30"</item>
   </string-array>
     <string name="auto_silence_title" msgid="6940612987809171112">"Automaattinen äänetön-tila"</string>
     <string name="auto_silence_summary" msgid="5757272454196171758">"Herätykset vaimennetaan <xliff:g id="MINUTES">%d</xliff:g> minuutin kuluttua"</string>
@@ -108,11 +100,6 @@
     <item msgid="7111908302622811168">"Torkku"</item>
     <item msgid="8573552194573068996">"Hylkää"</item>
   </string-array>
-  <string-array name="volume_button_setting_values">
-    <item msgid="4851033050639608752">"0"</item>
-    <item msgid="3204893476515513084">"1"</item>
-    <item msgid="7687709558968154577">"2"</item>
-  </string-array>
     <string name="default_ringtone_setting_title" msgid="4549726190682964245">"Aseta oletusherätysääni"</string>
     <string name="alarm_button_description" msgid="740283647046258651">"Herätykset"</string>
     <string name="gallery_button_description" msgid="1151743663255257668">"Galleria"</string>
@@ -120,11 +107,121 @@
     <string name="nightmode_button_description" msgid="990894208217576381">"Himmennä"</string>
     <string name="home_button_description" msgid="3383859096809056157">"Käynnistysohjelma"</string>
     <string name="desk_clock_button_description" msgid="4207371097361657274">"Kellon näyttö"</string>
-    <string name="battery_charging_level" msgid="4391767951302394083">"<xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>"</string>
+    <string name="battery_charging_level" msgid="5251483622085889693">"<xliff:g id="NUMBER">%d</xliff:g> <xliff:g id="PERCENT">%%</xliff:g>"</string>
     <string name="weather_fetch_failure" msgid="3425804832021006835">"Säätietoja ei ole saatavilla juuri nyt."</string>
     <string name="menu_item_dock_settings" msgid="3524235151132971114">"Telakointiasetukset"</string>
     <string name="alarm_klaxon_service_desc" msgid="2147506334302260256">"Äänentoistopalvelu Kelloon asetetuille hälytyksille."</string>
     <string name="loading_ringtone" msgid="6523322777415268044">"Ladataan soittoääntä..."</string>
     <string name="control_set_alarm" msgid="2194676418924016327">"Aseta herätys"</string>
     <string name="control_set_alarm_with_existing" msgid="1128169496817859490">"Herätys asetettu: <xliff:g id="TIME">%s</xliff:g>"</string>
+    <string name="flip_action_title">Puhelimen kääntö</string>
+    <string name="flip_action_dialog_title">Puhelimen kääntö</string>
+    <string name="flip_action_summary">Kääntäessäsi puhelimen ympäri
+        <xliff:g id="action">%s</xliff:g></string>
+    <string-array name="flip_action_entries">
+      <item>Älä tee mitään</item>
+      <item>Aseta torkku päälle</item>
+      <item>Hylkää herätys</item>
+    </string-array>
+    <string name="alarm_profile">Profiili</string>
+    <string name="alarm_profile_no_change_profile">Älä vaihda profiilia</string>
+    <string name="alarm_profile_summary_no_change">Älä vaihda profiilia kun herätys alkaa</string>
+    <string name="alarm_profile_summary_change_to">Kun herätys alkaa, profiili vaihdetaan
+        <xliff:g id="profile">%s</xliff:g></string>
+    <string name="alarm_incvol">Nouseva soittoääni</string>
+    <string name="msg_timer_service_is_not_ready">\nAjastimen palvelu ei ole valmis. Ei voi suorittaa.\n</string>
+    <string name="msg_timer_creation_fails">\nAjastimen luonti epäonnistui. Ei voi suorittaa.\n</string>
+    <string name="msg_timer_ui_thread_fails">\nKäyttöliittymän luonti epäonnistui. Ei voi suorittaa.\n</string>
+    <string name="msg_pref_update_fails">\nAsetusten muokkaaminen epäonnistui. Muutoksia ei tallennettu.\n</string>
+    <string name="msg_operation_fails">\nTehtävä epäonnistui.\n</string>
+    <string name="stopwatch_title">Sekuntikello</string>
+    <string name="stopwatch_actions_stop">Pysäytä</string>
+    <string name="stopwatch_actions_stop_cd">Pysäytä nykyinen sekuntikello</string>
+    <string name="stopwatch_actions_start">Aloita</string>
+    <string name="stopwatch_actions_start_cd">Aloita nykyinen sekuntikello</string>
+    <string name="stopwatch_actions_resume">Palaa</string>
+    <string name="stopwatch_actions_resume_cd">Palaa nykyiseen sekuntikelloon</string>
+    <string name="stopwatch_actions_reset">Nollaa</string>
+    <string name="stopwatch_actions_reset_cd">Nollaa nykyinen sekuntikello</string>
+    <string name="stopwatch_actions_lap">Kierros</string>
+    <string name="stopwatch_actions_lap_cd">Ota kierrosaika</string>
+    <string name="stopwatch_actions_sector">Sektori</string>
+    <string name="stopwatch_actions_sector_cd">Ota sektorin aika nykyisellä kierroksella</string>
+    <string name="stopwatch_info_panel_last_lap_title">Viimeinen kierros</string>
+    <string name="stopwatch_info_panel_best_lap_title">Paras kierros</string>
+    <string name="stopwatch_info_panel_laps_title">Kierrokset</string>
+    <string name="stopwatch_info_panel_empty_data">Dataa ei kerätty</string>
+    <string name="stopwatch_info_panel_empty_lap">Kierros</string>
+    <string name="stopwatch_info_panel_lap_label">Kierros <xliff:g id="lap">%1$s</xliff:g></string>
+    <string name="stopwatch_info_panel_lap_sector">Sektori <xliff:g id="sector">%1$s</xliff:g></string>
+    <string name="stopwatch_menu_hide_last_lap_panel">Piilota \'Viimeinen kierros\'</string>
+    <string name="stopwatch_menu_hide_best_lap_panel">Piilota \'Paras kierros\'</string>
+    <string name="stopwatch_menu_hide_laps_panel">Piilota \'kierrokset\'</string>
+    <string name="stopwatch_menu_settings">Asetukset</string>
+    <string name="stopwatch_preferences_lap_sectors">Kierros/sektorit</string>
+    <string name="stopwatch_preferences_lap_sectors_summary">Muuta kierrosten ja sektoreiden asetuksia.</string>
+    <string name="stopwatch_preferences_sectors">Sektorit</string>
+    <string name="stopwatch_preferences_sectors_summary">{0,choice,0#Kierroksen sektorit ei käytössä.|1#Kierroksen sektorit käytössä 1 sektorilla.|1&lt;Kierroksen sektorit käytössä {0} sektorilla.}</string>
+    <string name="stopwatch_preferences_best_lap_behavior">Parhaan kierroksen asetukset</string>
+    <string name="stopwatch_preferences_about">Tietoja</string>
+    <string name="stopwatch_best_lap_lower_pref">Pienemmät ajat ovat parempia</string>
+    <string name="stopwatch_best_lap_lower_pref_summary">Paras kierros on pienin aika.</string>
+    <string name="stopwatch_best_lap_highest_pref">Suuremmat ajat ovat parempia</string>
+    <string name="stopwatch_best_lap_highest_pref_summary">Paras kierros on pisin aika.</string>
+    <string name="sectors_dialog_enabled_text">Käytössä olevat kierroksen sektorit:</string>
+    <string name="countdown_title">Ajastin</string>
+    <string name="countdown_actions_stop">Pysäytä</string>
+    <string name="countdown_actions_stop_cd">Pysäytä nykyinen ajastin</string>
+    <string name="countdown_actions_start">Aloita</string>
+    <string name="countdown_actions_start_cd">Aloita nykyinen ajastin</string>
+    <string name="countdown_actions_resume">Palaa</string>
+    <string name="countdown_actions_resume_cd">Palaa nykyiseen ajastimeen</string>
+    <string name="countdown_actions_reset">Nollaa</string>
+    <string name="countdown_actions_reset_cd">Nollaa nykyinen ajastin</string>
+    <string name="countdown_actions_cancel">Peruuta</string>
+    <string name="countdown_actions_cancel_cd">Peruuta ajastimeen tekemäsi muutokset</string>
+    <string name="countdown_actions_set">Aseta</string>
+    <string name="countdown_actions_set_cd">Aseta nykyisen ajastimen aika</string>
+    <string name="countdown_menu_open_timer_editor">Muokkaa ajastinta</string>
+    <string name="countdown_menu_close_timer_editor">Lopeta ajastimen muokkaus</string>
+    <string name="countdown_menu_settings">Asetukset</string>
+    <string name="countdown_panel_title">Tallennetut ajastimet</string>
+    <string name="countdown_panel_add_text">Lisää nykyinen ajastin</string>
+    <string name="countdown_panel_add_text_cd">Lisää nykyinen ajastin tallennettuihin ajastimiin.</string>
+    <string name="countdown_panel_remove_cd">Poista ajastin tallennetuista ajastimista.</string>
+    <string name="countdown_dialog_add">Uusi ajastin luodaan.\n\nHaluatko jatkaa?\n</string>
+    <string name="countdown_dialog_delete">Valitsemasi ajastin \'<xliff:g id="timer">%1$s</xliff:g>\' poistetaan.\n\nOletko varma?\n</string>
+    <string name="countdown_preferences_notifications">Ilmoitukset</string>
+    <string name="countdown_preferences_notifications_summary">Ajastimen ilmoitusasetukset.</string>
+    <string name="countdown_preferences_about">Tietoja</string>
+    <string name="countdown_notification_oncountdown_category">Ajastuksen aikana</string>
+    <string name="countdown_notification_oncountdown_notifications_title">Ilmoitukset</string>
+    <string name="countdown_notification_oncountdown_notifications_summary_on">Näytä ilmoitukset ilmoituspalkissa.</string>
+    <string name="countdown_notification_oncountdown_notifications_summary_off">Älä näytä ilmoituksia ilmoituspalkissa.</string>
+    <string name="countdown_notification_onfinalcountdown_category">Ajastuksen loppuessa</string>
+    <string name="countdown_notification_onfinalcountdown_notifications_title">Ilmoitukset</string>
+    <string name="countdown_notification_onfinalcountdown_notifications_summary_on">Näytä ilmoitukset ilmoituspalkissa.</string>
+    <string name="countdown_notification_onfinalcountdown_notifications_summary_off">Älä näytä ilmoituksia ilmoituspalkissa.</string>
+    <string name="countdown_notification_onfinalcountdown_open_clock_screen_title">Avaa kellonäyttö</string>
+    <string name="countdown_notification_onfinalcountdown_open_clock_screen_summary_on">Kun ajastin loppuu, ajastinkello aukee näytölle (Ei käytössä puhelun aikana).</string>
+    <string name="countdown_notification_onfinalcountdown_open_clock_screen_summary_off">Kun ajastin loppuu, ajastinkello ei aukea näytölle ja häiritse käyttäjän toimia.</string>
+    <string name="countdown_notification_onfinalcountdown_ringtone_title">Soittoääni</string>
+    <string name="countdown_notification_onfinalcountdown_ringtone_silent">Äänetön</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_title">Värinä</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_always">Aina</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_only_when_silent">Vain äänettömässä tilassa</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_never">Ei koskaan</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_on_call_title">Värinä puhelun aikana</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_on_call_summary_on">Salli värinä puhelun aikana.</string>
+    <string name="countdown_notification_onfinalcountdown_vibrate_on_call_summary_off">Ei värinää puhelun aikana.</string>
+    <string name="service_countdown_notification_title">Ajastin</string>
+    <string name="service_countdown_notification_msg_progress">Ajastin on käytössä.</string>
+    <string name="service_countdown_notification_msg_end">Ajastin on päättynyt.</string>
+    <string name="service_countdown_notification_summary">Jäljellä oleva aika: <xliff:g id="time">%1$s</xliff:g></string>
+    <string name="cling_deskclock_desc">Liu\'ta sivulle siirtyäksesi sekuntikelloon ja ajastimeen.</string>
+    <string name="cling_stopwatch_desc">Säädä kierrosten ja sektoreiden toimintaa asetuksista.</string>
+    <string name="cling_countdown_desc">Muokataksesi ajastinta, paina kelloa pitkään</string>
+    <string name="overflow_button_cd">Lisää asetuksia</string>
+    <string name="show_status_bar_icon_title">Näytä kuvake</string>
+    <string name="show_status_bar_icon_summary">Näytä kuvake tilapalkissa kun hälytys on käytössä</string>
 </resources>

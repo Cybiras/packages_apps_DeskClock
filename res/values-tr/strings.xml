@@ -61,7 +61,7 @@
     <string name="analog_gadget" msgid="1670505720837152766">"Analog saat"</string>
     <string name="settings" msgid="5849739030579520686">"Ayarlar"</string>
     <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">"Sessiz modda alarm çal"</string>
-    <string name="alarm_in_silent_mode_summary" msgid="6042500263899922832">"Telefon sessiz moddayken bile alarm çal"</string>
+    <string name="alarm_in_silent_mode_summary" msgid="123772279768441207">"Alarm sessiz modda da çalsın"</string>
     <string name="snooze_duration_title" msgid="1471249885139952670">"Erteleme süresi"</string>
   <string-array name="snooze_duration_entries">
     <item msgid="8337408933053603125">"5 dakika"</item>
@@ -70,14 +70,6 @@
     <item msgid="7248236967714374250">"20 dakika"</item>
     <item msgid="738394723625179423">"25 dakika"</item>
     <item msgid="1180222611308391616">"30 dakika"</item>
-  </string-array>
-  <string-array name="snooze_duration_values">
-    <item msgid="3655014754453084122">"5"</item>
-    <item msgid="8939029597449573449">"10"</item>
-    <item msgid="3922647341176353315">"15"</item>
-    <item msgid="5821804105985044459">"20"</item>
-    <item msgid="6048861883552402852">"25"</item>
-    <item msgid="2740866721232379791">"30"</item>
   </string-array>
     <string name="auto_silence_title" msgid="6940612987809171112">"Otomatik susma"</string>
     <string name="auto_silence_summary" msgid="5757272454196171758">"Alarmlar <xliff:g id="MINUTES">%d</xliff:g> dakika sonra susacaktır"</string>
@@ -108,11 +100,6 @@
     <item msgid="7111908302622811168">"Ertele"</item>
     <item msgid="8573552194573068996">"Kapat"</item>
   </string-array>
-  <string-array name="volume_button_setting_values">
-    <item msgid="4851033050639608752">"0"</item>
-    <item msgid="3204893476515513084">"1"</item>
-    <item msgid="7687709558968154577">"2"</item>
-  </string-array>
     <string name="default_ringtone_setting_title" msgid="4549726190682964245">"Varsayılan zil sesini ayarlayın"</string>
     <string name="alarm_button_description" msgid="740283647046258651">"Alarm çalar"</string>
     <string name="gallery_button_description" msgid="1151743663255257668">"Galeri"</string>
@@ -120,7 +107,7 @@
     <string name="nightmode_button_description" msgid="990894208217576381">"Loş"</string>
     <string name="home_button_description" msgid="3383859096809056157">"Başlatıcı"</string>
     <string name="desk_clock_button_description" msgid="4207371097361657274">"Saat görüntüleme"</string>
-    <string name="battery_charging_level" msgid="4391767951302394083">"<xliff:g id="NUMBER">%d</xliff:g> <xliff:g id="PERCENT">%%</xliff:g>"</string>
+    <string name="battery_charging_level" msgid="5251483622085889693">"<xliff:g id="PERCENT">%%</xliff:g><xliff:g id="NUMBER">%d</xliff:g>"</string>
     <string name="weather_fetch_failure" msgid="3425804832021006835">"Hava durumu bilgileri şu anda kullanılamıyor."</string>
     <string name="menu_item_dock_settings" msgid="3524235151132971114">"Yuva ayarları"</string>
     <string name="alarm_klaxon_service_desc" msgid="2147506334302260256">"Clock\'ta ayarlanmış alarmlar için ses çalma hizmeti"</string>
